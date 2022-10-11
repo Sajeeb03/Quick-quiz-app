@@ -21,6 +21,9 @@ const Quiz = () => {
                     />)
                 }
             </div>
+            <div className='bg-gray-300 rounded-lg border-2 border-cyan-800 p-7 mx-2 mb-2'>
+                <h1 className='text-4xl font-bold text-center'>You've got {correctAns} questions right!</h1>
+            </div>
         </div>
     );
 };

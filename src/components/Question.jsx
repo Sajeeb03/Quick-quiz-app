@@ -19,11 +19,12 @@ const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
         Swal.fire(`Correct ans is:
         ${correctAnswer}`);
     }
-    // console.log(options)
+    const questionR = question.replace('<p>', '')
+    // const questionReplace = questionR.replace('</p>', '')
     return (
 
         <div className='border-2 border-cyan-800 bg-gray-300 rounded-lg m-2 p-4 relative'>
-            <h1 className='text-3xl font-bold mb-3'>Quiz {idx + 1}:{question}</h1>
+            <h1 className='text-3xl font-bold mb-3'>Quiz {idx + 1}: {questionR.replace('</p>', '')}</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-1 text-xl font-semibold'>
                 {
                     options.map((option, idx) => <p key={idx} className={`bg-cyan-600 p-6 rounded-lg`} ><input type="radio" name='idx' onClick={() => handleAnswer(option)} /> {option}</p>)
