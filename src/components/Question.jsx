@@ -4,10 +4,9 @@ import Swal from 'sweetalert2';
 
 const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
 
-    const { question, id, correctAnswer, options } = questions
+    const { question, correctAnswer, options } = questions
     const handleAnswer = ans => {
         if (ans === correctAnswer) {
-            console.log('correct');
             Swal.fire('Correct Answer');
             setCorrectAns(correctAns + 1);
         }
@@ -20,7 +19,6 @@ const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
         ${correctAnswer}`);
     }
     const questionR = question.replace('<p>', '')
-    // const questionReplace = questionR.replace('</p>', '')
     return (
 
         <div className='border-2 border-cyan-800 bg-gray-300 rounded-lg m-2 p-4 relative'>
