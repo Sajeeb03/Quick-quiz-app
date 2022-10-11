@@ -16,9 +16,7 @@ const Header = () => {
                         <li className="flex">
                             <Link rel="noopener noreferrer" to='/home' className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Home</Link>
                         </li>
-                        <li className="flex">
-                            <Link rel="noopener noreferrer" to='/quiz' className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Quiz</Link>
-                        </li>
+
                         <li className="flex">
                             <Link rel="noopener noreferrer" to='/statistics' className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Statistics</Link>
                         </li>
@@ -38,9 +36,6 @@ const Header = () => {
                                 <ul className="items-stretch ml-5 p-2 md:hidden">
                                     <li className="">
                                         <Link rel="noopener noreferrer" to='/home' className="">Home</Link>
-                                    </li>
-                                    <li className="">
-                                        <Link rel="noopener noreferrer" to='/quiz' className="">Quiz</Link>
                                     </li>
                                     <li className="">
                                         <Link rel="noopener noreferrer" to='/statistics' className="">Statistics</Link>

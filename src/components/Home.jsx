@@ -5,7 +5,7 @@ import { CategoriesContext } from './Root';
 
 const Home = () => {
     const categories = useContext(CategoriesContext);
-    console.log(categories);
+    // console.log(categories);
     return (
         <div className='container m-auto relative'>
             <img className='w-full h-80 md:h-60' src={img} alt="" />
