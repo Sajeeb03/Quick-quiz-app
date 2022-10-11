@@ -5,7 +5,7 @@ import Question from './Question';
 const Quiz = () => {
     const [correctAns, setCorrectAns] = useState(0);
     const details = useLoaderData();
-    const { name, logo, questions, total } = details.data
+    const { name, questions } = details.data
     console.log(details.data.questions)
     return (
         <div className='container m-auto'>

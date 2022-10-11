@@ -1,5 +1,5 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
-import React, { useState } from 'react';
+import React from 'react';
 import Swal from 'sweetalert2';
 
 const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
@@ -26,7 +26,7 @@ const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
             <h1 className='text-3xl font-bold mb-3'>Quiz {idx + 1}:{question}</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-1 text-xl font-semibold'>
                 {
-                    options.map((option, idx) => <p onClick={() => handleAnswer(option)} key={idx} className={`bg-cyan-600 p-6 rounded-lg`} ><input type="radio" className="text-red-600" /> {option}</p>)
+                    options.map((option, idx) => <p key={idx} className={`bg-cyan-600 p-6 rounded-lg`} ><input type="radio" name='idx' onClick={() => handleAnswer(option)} /> {option}</p>)
                 }
             </div>
             <EyeIcon onClick={handleCorrectAns} className='h-6 w-6 absolute top-1 right-3 mt-5'></EyeIcon>

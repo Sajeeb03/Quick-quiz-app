@@ -11,8 +11,7 @@ const Home = () => {
             <img className='w-full h-80 md:h-60' src={img} alt="" />
             <div className='absolute inset-0 w-full h-80 md:h-60 bg-black bg-opacity-75 flex flex-col justify-center items-center'>
                 <h1 className='text-3xl font-bold text-cyan-400'>Test Your  Ability</h1>
-                <p className='text-lg text-cyan-400 text-center px-8 mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit error aperiam autem, quos molestiae ab aut quia optio cum voluptatibus fugit adipisci earum cupiditate accusantium similique alias sunt eos perspiciatis veniam reiciendis sint fuga?
-                </p>
+                <p className='text-lg text-cyan-400 text-center px-8 mt-3'>Here are some quiz on some extraordinary topic of web development participate and learn more about them.Javascript's, CSS, Git, React have some interesting questions for you.  Try them below.</p>
             </div>
             <div className='my-2 m-1 sm:mx-0 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-2 lg:gap-8'>
                 {

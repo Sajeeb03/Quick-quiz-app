@@ -32,16 +32,16 @@ const Header = () => {
 
                     {
                         menu && (
-                            <div className='absolute top-14 left-0 mt-4  w-full bg-gray-800'>
+                            <div className='absolute top-14 left-0 z-10 mt-4 h-30 w-full bg-gray-800'>
                                 <ul className="items-stretch ml-5 p-2 md:hidden">
-                                    <li className="">
-                                        <Link rel="noopener noreferrer" to='/home' className="">Home</Link>
+                                    <li onClick={() => setMenu(!menu)}>
+                                        <Link rel="noopener noreferrer" to='/home'>Home</Link>
                                     </li>
-                                    <li className="">
-                                        <Link rel="noopener noreferrer" to='/statistics' className="">Statistics</Link>
+                                    <li onClick={() => setMenu(!menu)}>
+                                        <Link rel="noopener noreferrer" to='/statistics'>Statistics</Link>
                                     </li>
-                                    <li className="">
-                                        <Link rel="noopener noreferrer" to='/blogs' className="">Blogs</Link>
+                                    <li onClick={() => setMenu(!menu)}>
+                                        <Link rel="noopener noreferrer" to='/blogs'>Blogs</Link>
                                     </li>
                                 </ul>
                             </div>
