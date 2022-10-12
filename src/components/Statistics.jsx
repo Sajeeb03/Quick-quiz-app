@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { CategoriesContext } from './Root';
 
 const Statistics = () => {
@@ -15,7 +15,7 @@ const Statistics = () => {
                     <CartesianGrid stroke="#8884" strokeDasharray="5 6" />
                 </BarChart>
             </ResponsiveContainer>
-            <h1 className='text-xl md:text-3xl md:ml-2 md:ml-0 font-semibold text-center'>Fig: Number of total questions.</h1>
+            <h1 className='text-xl md:text-3xl ml-2 md:ml-0 font-semibold text-center'>Fig: Number of total questions.</h1>
         </div>
     );
 

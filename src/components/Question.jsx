@@ -7,18 +7,17 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ({ questions, idx, correctAns, setCorrectAns }) => {
-
-    const { question, correctAnswer, options } = questions
+    const { question, correctAnswer, options } = questions;
     const handleAnswer = ans => {
         if (ans === correctAnswer) {
-            // Swal.fire('Correct Answer');
             toast.success('Correct answer', { autoClose: 500, position: 'top-center' })
             setCorrectAns(correctAns + 1);
         }
         else {
             toast.warn('Wrong Answer', { autoClose: 500, position: 'top-center' })
-        }
+        }  
     }
+
     const handleCorrectAns = () => {
         Swal.fire(`Correct ans is:
         ${correctAnswer}`);
