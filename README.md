@@ -1,18 +1,20 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Quick-quiz
 
 Live site link : (https://quick-quiz-web.netlify.app/).
 
 ## What we did in this project
 
+* A client site routing website using react router. It is a single page aplication.
 * Created a site to solve multiple choice question based on some topic.
-* Made a couter to count correct answers.
+* Made a counter to count correct answers.
 * Use context api to load data to the child elements.
-* Created a blog page with valueable information 
+* Created a blog page with valueable information.
 * Created a statistics site where the number of total questions showed in a chart.
+
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
