@@ -8,8 +8,8 @@ const Home = () => {
     // console.log(categories);
     return (
         <div className='container m-auto relative'>
-            <img className='w-full h-80 md:h-60' src={img} alt="" />
-            <div className='absolute inset-0 w-full h-80 md:h-60 bg-black bg-opacity-75 flex flex-col justify-center items-center'>
+            <img className='w-full h-80 md:h-60 lg:h-screen' src={img} alt="" />
+            <div className='absolute inset-0 w-full h-80 md:h-60 lg:h-screen bg-black bg-opacity-75 flex flex-col justify-center items-center'>
                 <h1 className='text-3xl font-bold text-cyan-400'>Test Your  Ability</h1>
                 <p className='text-lg text-cyan-400 text-center px-8 mt-3'>Here are some quiz on some extraordinary topic of web development participate and learn more about them.Javascript's, CSS, Git, React have some interesting questions for you.  Try them below.</p>
             </div>

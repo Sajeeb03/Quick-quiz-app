@@ -32,7 +32,7 @@ const Header = () => {
 
                     {
                         menu && (
-                            <div className='absolute top-14 left-0 z-10 mt-4 h-30 w-full bg-gray-800'>
+                            <div className='absolute top-14 left-0 z-10 mt-3 h-30 w-full bg-gray-800 text-cyan-500'>
                                 <ul className="items-stretch ml-5 p-2 md:hidden">
                                     <li onClick={() => setMenu(!menu)}>
                                         <Link rel="noopener noreferrer" to='/home'>Home</Link>

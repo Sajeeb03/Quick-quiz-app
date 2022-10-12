@@ -10,7 +10,7 @@ const Quiz = () => {
 
     return (
         <div className='container m-auto'>
-            <h1 className='text-5xl font-bold text-center mt-2 font-serif'>{name} quiz</h1>
+            <h1 className='text-5xl font-bold text-center mt-2 font-serif'>Quiz on <span className='text-cyan-900'>{name}</span></h1>
             <div className=''>
                 {
                     questions.map((question, idx) => <Question
